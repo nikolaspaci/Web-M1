@@ -4,10 +4,12 @@
    justify-content: space-between;
 }
 .card{
-    flex: 0 1 50%;
+    flex: 0 1 45%;
+    border-radius: 0 0 2px 2px;
 }
 
 .card img{
     margin-left: 2%;
     width: 5rem;
 }
+
