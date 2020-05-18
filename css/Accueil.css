@@ -1,0 +1,13 @@
+.contenaireCard{
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+.card{
+    flex: 0 1 50%;
+}
+
+.card img{
+    margin-left: 2%;
+    width: 5rem;
+}
