@@ -6,10 +6,18 @@
 .card{
     flex: 0 1 45%;
     border-radius: 0 0 2px 2px;
+    font-family: 'Quicksand', sans-serif;
+
 }
 
 .card img{
     margin-left: 2%;
     width: 5rem;
 }
-
+h5{
+    font-family: 'Quicksand', sans-serif;
+}
+h4{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+}

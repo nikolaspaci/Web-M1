@@ -14,6 +14,11 @@
       <div class="content">
          <div id="Presentation">
             <h4>Presentation</h4>
+            <div class="descPresentation">
+				<p>La 1ère année de Master - Méthodes Informatiques Appliquées pour la Gestion des Entreprises (MIAGE) a pour vocation de former des professionnels et des chercheurs maîtrisant parfaitement l'outil informatique et possédants une bonne connaissance de l'organisation et du fonctionnement de l'entreprise. MIAGE garde un ancrage fort dans le réseau national des MIAGE, qui regroupe l'ensemble des formations analogues dans vingt universités française.</p>
+				<ul><li>Utiliser, maîtriser et intégrer les technologies informatique</li><li>D'aborder la modélisation de systèmes d'information et les méthodes de conduites de projet</li><li>Comprendre le fonctionnement des organisations, leurs structures, leurs impératifs stratégiques et l'ensemble des interactions, notamment dans la dimension opérationnelle et humaine</li><li>Apprendre et maîtriser l'anglais et une LV2 obligatoire, avec une certification en anglais par le TOEIC</li></ul>
+         
+         </div>
          </div>
          <hr>
          <div id="Caracteristiques">

@@ -1,8 +1,9 @@
-.navbar{
-    background-color: #eee!important;
+.navbar,.dropdown-menu {
+    background-color: #2E4588!important;
     
 }
 .navbar a{
-    color: #22438A !important;
+    color:#eee !important;
 }
+
 
