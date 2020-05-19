@@ -12,12 +12,12 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
            <ul class="navbar-nav">
               <li class="nav-item dropdown" <?php if ($currentPage == 'Accueil') {  echo 'class="nav-item dropdown active"';} ?>>
-                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Accueil</a>
+                 <a class="nav-link dropdown-toggle " data-toggle="dropdown" href="Accueil.php">Accueil</a>
                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Présentation</a>
-                    <a class="dropdown-item" href="#">Caractéristiques</a>
-                    <a class="dropdown-item" href="#">Embauches</a>
-                    <a class="dropdown-item" href="#">Avantages</a>
+                    <a class="dropdown-item" href="Accueil.php#Presentation">Présentation</a>
+                    <a class="dropdown-item" href="Accueil.php#Cracteristiques">Caractéristiques</a>
+                    <a class="dropdown-item" href="Accueil.php#Embauches">Embauches</a>
+                    <a class="dropdown-item" href="Accueil.php#Avantages">Avantages</a>
                  </div>
               </li>
               <li class="nav-item">
