@@ -33,12 +33,25 @@
             <p>La formation est assurée en partenariat avec le CFA AFIA. Le CFA a été créé en 1992 par des grandes entreprises avec l’aval du Conseil Régional d’Ile de France. 
                A ce jour, le CFA a accompagné plus de 6 000 apprentis et collabore avec plus de 650 entreprises.
             <p>
+            <div class="row">
+            <div class="col-12 col-md-6">
             <h5>Durée et rythme d'alternance</h5>
             <p>2 ans
                <br>2 semaines en Université / 2 semaines en Entreprise
             </p>
+            <h5>Contact</h5>
+            <p>Université Paris Dauphine</p>
+            <p>Département MIDO<p>
+            <p>Place du Maréchal de Lattre de Tassigny
+               75775 Paris cedex 16</p>
+            <p>Tél : 01 44 05 42 47</p>
+            <a href="https://dauphine.psl.eu/" target="_blank"> Accéder au site de Dauphine</a>
+            </div>
+            <div class="col-12 col-md-6">
             <h5>Le lieu d'étude</h5>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7921.032955916046!2d2.272029016832776!3d48.871351736488464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e665599cdd14c7%3A0xe1a5048f0be71954!2sUniversit%C3%A9%20Paris-Dauphine%2C%20Place%20du%20Mar%C3%A9chal%20de%20Lattre%20de%20Tassigny%2C%2075016%20Paris!5e0!3m2!1sfr!2sfr!4v1589872079365!5m2!1sfr!2sfr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            </div>
          </div>
          <hr>
          <div id="Embauches">
