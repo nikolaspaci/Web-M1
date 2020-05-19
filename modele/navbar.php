@@ -1,5 +1,5 @@
 <!-- Begin Generic NavBAR-->
-<nav class="navbar navbar-expand-sm navbar-light bg-lignt">
+<nav class="navbar navbar-expand-sm navbar-light bg-lignt sticky-top">
         <!-- Brand -->
         <a class="navbar-brand" href="#"><img src="img/iconedodo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">Mon Master</a>
 
