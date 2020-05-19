@@ -21,10 +21,10 @@
                  </div>
               </li>
               <li class="nav-item">
-                 <a class="nav-link" href="#">Matières</a>
+                 <a class="nav-link" href="Matieres.php">Matières</a>
               </li>
               <li class="nav-item">
-                 <a class="nav-link" href="#">Etudiants</a>
+                 <a class="nav-link" href="Etudiants.php">Etudiants</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Candidater</a>
