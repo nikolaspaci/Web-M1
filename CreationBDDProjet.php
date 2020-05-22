@@ -34,12 +34,25 @@
                                         Nom VARCHAR(50),
                                         NomCourt VARCHAR(10),
                                         NbHeures INT UNSIGNED,
+                                        Semestre INT UNSIGNED,
                                         DescMat MEDIUMTEXT)";
                     $connexion->exec($sqlCreationTable);
                     echo '<p>Creation de la table Matiere effectuee avec succes</p>';
                 }
                 catch(PDOException $e){
                     echo '<p>Echec de la creation de la table Matiere</p>';
+                }
+
+
+                //Création de la table Stage
+                try{
+                    $sqlCreationTable="CREATE TABLE Stage(IdStage INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+                                        NomSpecialite VARCHAR(30))";
+                    $connexion->exec($sqlCreationTable);
+                    echo '<p>Creation de la table Stage effectuee avec succes</p>';
+                }
+                catch(PDOException $e){
+                    echo '<p>Echec de la creation de la table Stage</p>';
                 }
 
                 //Création de la table Etudiant
@@ -53,7 +66,10 @@
                                         NoteMath INT UNSIGNED,
                                         NoteInformatique INT UNSIGNED,
                                         Moyenne INT UNSIGNED,
-                                        StatusEtudiant VARCHAR(15))";
+                                        StatusEtudiant VARCHAR(15),
+                                        IdStage INT UNSIGNED,
+                                        LinkPagePerso  VARCHAR (80),
+                                        CONSTRAINT FK_IdStage FOREIGN KEY (IdStage) REFERENCES Stage(IdStage))";
                     $connexion->exec($sqlCreationTable);
                     echo '<p>Creation de la table Etudiant effectuee avec succes</p>';
                 }
@@ -61,19 +77,7 @@
                     echo '<p>Echec de la creation de la table Etudiant</p>';
                 }
 
-                //Création de la table Stage
-                try{
-                    $sqlCreationTable="CREATE TABLE Stage(IdStage INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-                                        IdEtudiant INT UNSIGNED,
-                                        NomSpecialite VARCHAR(30),
-                                        UNIQUE (IdEtudiant),
-                                        CONSTRAINT FK_IdEtudiant FOREIGN KEY (IdEtudiant) REFERENCES Etudiant(IdEtudiant))";
-                    $connexion->exec($sqlCreationTable);
-                    echo '<p>Creation de la table Stage effectuee avec succes</p>';
-                }
-                catch(PDOException $e){
-                    echo '<p>Echec de la creation de la table Stage</p>';
-                }
+             
             }
         ?>
     </body>

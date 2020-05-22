@@ -11,5 +11,18 @@
    </head>
    <body>
       <?php include ("modele/navbar.php") ?>
-      <div class="content"></div>
+      <div class="content">
+      <table id="tableEtudiant" class="table table-striped table-bordered table-hover table-responsive" style="width:100%">
+            <thead>
+               <tr>
+                  <th>Nom</th>
+                  <th>Prenom</th>
+                  <th>Mail</th>
+                  <th>Statut</th>
+                  <th>Description Stage</th>
+               </tr>
+            </thead>
+         </table>
+
+      </div>
 </html>

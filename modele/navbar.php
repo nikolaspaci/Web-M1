@@ -1,7 +1,7 @@
 <!-- Begin Generic NavBAR-->
 <nav class="navbar navbar-expand-sm navbar-light bg-lignt sticky-top">
         <!-- Brand -->
-        <a class="navbar-brand" href="#"><img src="img/iconedodo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">Mon Master</a>
+        <a class="navbar-brand" href="Accueil.php"><img src="img/iconedodo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">Mon Master</a>
 
         <!-- Toggler/collapsibe Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -27,7 +27,7 @@
                  <a class="nav-link" href="Etudiants.php">Etudiants</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Candidater</a>
+                <a class="nav-link" href="Candidater.php">Candidater</a>
              </li>
            </ul>
         </div>
