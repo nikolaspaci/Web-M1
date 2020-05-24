@@ -12,12 +12,12 @@
    <body>
       <?php include ("modele/navbar.php") ?>
       <div class="content">
-         <form>
+         <form onsubmit="return controleFormulaire()">
             <div class="form-row">
                <div class="form-group col">
                   <label for="InputNom">Nom</label>
                   <input type="text" class="form-control" id="InputNom"  placeholder="Saisir votre nom">
-               </div>
+               </div>               
                <div class="form-group col">
                   <label for="InputPrenom">Prenom</label>
                   <input type="text" class="form-control" id="InputPrenom" placeholder="Saisir votre prénom">
