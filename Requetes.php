@@ -26,7 +26,7 @@ function connectDB(){
 function showMatiere($semestre){
     $table="matiere";
     $db = connectDB();
-    $sql = "SELECT Nom,NbHeures,Semestre,DescMat FROM $table where Semestre=$semestre";
+    $sql = "SELECT * FROM $table where Semestre=$semestre";
     $stmt= $db->prepare($sql);
     $stmt->execute();
     $results = $stmt->fetchAll(PDO::FETCH_ASSOC);

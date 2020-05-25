@@ -42,7 +42,7 @@ $(document).ready(function () {
                 width: "30%",
              },
             { 
-                data: 'NbHeures' ,
+                data: 'NbECTS' ,
                 width: "20%",
             },
             { 
@@ -77,7 +77,7 @@ $(document).ready(function () {
                 width: "30%",
              },
             { 
-                data: 'NbHeures' ,
+                data: 'NbECTS' ,
                 width: "20%",
             },
             { 
