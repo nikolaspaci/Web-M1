@@ -52,7 +52,7 @@
                   <a data-toggle="collapse" data-parent="#accordionSemestre" href="#collapseSemestre2" aria-expanded="true"
                      aria-controls="collapseSemestre2">
                      <h5 class="mb-0">
-                        Semestre 1 <i class="fas fa-angle-down rotate-icon"></i>
+                        Semestre 2 <i class="fas fa-angle-down rotate-icon"></i>
                      </h5>
                   </a>
                </div>
