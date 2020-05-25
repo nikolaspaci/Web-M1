@@ -11,8 +11,8 @@
         <!-- Navbar links -->
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
            <ul class="navbar-nav">
-              <li class="nav-item dropdown" <?php if ($currentPage == 'Accueil') {  echo 'class="nav-item dropdown active"';} ?>>
-                 <a class="nav-link dropdown-toggle " data-toggle="dropdown" href="Accueil.php">Accueil</a>
+              <li <?php if ($currentPage == 'Accueil') {  echo 'class="nav-item dropdown active"';}else{echo 'class="nav-item dropdown"';} ?>>
+                 <a class="nav-link dropdown-toggle "  data-toggle="dropdown" href="Accueil.php">Accueil</a>
                  <div class="dropdown-menu">
                     <a class="dropdown-item" href="Accueil.php#Presentation">Présentation</a>
                     <a class="dropdown-item" href="Accueil.php#Cracteristiques">Caractéristiques</a>
@@ -20,13 +20,13 @@
                     <a class="dropdown-item" href="Accueil.php#Avantages">Avantages</a>
                  </div>
               </li>
-              <li class="nav-item">
+              <li <?php if ($currentPage == 'Matieres') {  echo 'class="nav-item active"';}else{echo 'class="nav-item"';} ?>>
                  <a class="nav-link" href="Matieres.php">Matières</a>
               </li>
-              <li class="nav-item">
+              <li <?php if ($currentPage == 'Etudiants') {  echo 'class="nav-item active"';}else{echo 'class="nav-item"';} ?>>
                  <a class="nav-link" href="Etudiants.php">Etudiants</a>
               </li>
-              <li class="nav-item">
+              <li <?php if ($currentPage == 'Candidater') {  echo 'class="nav-item active"';}else{echo 'class="nav-item"';} ?>>
                 <a class="nav-link" href="Candidater.php">Candidater</a>
              </li>
            </ul>

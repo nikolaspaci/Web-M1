@@ -12,6 +12,10 @@
    <body>
       <?php include ("modele/navbar.php") ?>
       <div class="content">
+      <h4>Candidater</h4>
+      <p>Vous souhaitez rejoindre la MIAGE de Dauphine ?</p>
+      <p>Postulez dès maintenant !</p>
+
          <form>
             <div class="form-row">
                <div class="form-group col">

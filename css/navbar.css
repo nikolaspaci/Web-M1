@@ -5,3 +5,11 @@
 .navbar a{
     color:#eee !important;
 }
+
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: #C34F5A !important;
+ }
+
+ .active{
+    font-weight: 800!important;
+}

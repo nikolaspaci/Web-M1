@@ -12,7 +12,10 @@
    <body>
       <?php include ("modele/navbar.php") ?>
       <div class="content">
-      <table id="tableEtudiant" class="table table-striped table-bordered table-hover table-responsive" style="width:100%">
+      <h4>Etudiants</h4>
+      <p>Vous trouverez l'ensemble des étudiants inscrits en Master MIAGE</p>
+      
+      <table id="tableEtudiant" class="table table-bordered table-hover" style="width:100%">
             <thead>
                <tr>
                   <th>Nom</th>

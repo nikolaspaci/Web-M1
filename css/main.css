@@ -3,11 +3,20 @@
    }
 
 .content{
-    margin-top: 5%;
+    margin-top: 3%;
     margin-left: 10%;
     margin-right: 10%;
 }
 
 body{
     background-color: #eee;
+}
+
+h4,h5{
+    color: #2E4588;
+    
+}
+
+p,#content li{
+    font-size: 15px;
 }

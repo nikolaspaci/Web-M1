@@ -3,6 +3,20 @@ $(document).ready(function () {
         "language": {
             "url": "https://cdn.datatables.net/plug-ins/1.10.21/i18n/French.json"
         },
+        "bPaginate": true,
+        "bLengthChange": false,
+        "bFilter": true,
+        "bInfo": false,
+        "bAutoWidth": false,
+        responsive: true,
+        responsive: {
+            details: {
+                renderer: $.fn.dataTable.Responsive.renderer.tableAll()
+            }
+        },
+        rowReorder: {
+            selector: 'td:nth-child(2)'
+        },
         "ajax" : {
             "url" : "./Requetes.php",
             "type" : 'POST',

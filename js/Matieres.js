@@ -3,6 +3,33 @@ $(document).ready(function () {
         "language": {
             "url": "https://cdn.datatables.net/plug-ins/1.10.21/i18n/French.json"
         },
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bFilter": true,
+        "bInfo": false,
+        "bAutoWidth": false,
+        responsive: true,
+        rowReorder: {
+            selector: 'td:nth-child(2)'
+        },
+        responsive: {
+            details: {
+                renderer: function ( api, rowIdx, columns ) {
+                    var data = $.map( columns, function ( col, i ) {
+                        return col.hidden ?
+                            '<tr data-dt-row="'+col.rowIndex+'" data-dt-column="'+col.columnIndex+'">'+
+                                '<td>'+col.title+':'+'</td> '+
+                                '<td>'+col.data+'</td>'+
+                            '</tr>' :
+                            '';
+                    } ).join('');
+     
+                    return data ?
+                        $('<table/>').append( data ) :
+                        false;
+                }
+            }
+        },
         "ajax" : {
             "url" : "./Requetes.php",
             "type" : 'POST',
@@ -10,15 +37,33 @@ $(document).ready(function () {
             "dataSrc" :''
         },
         columns: [
-            { data: 'Nom' },
-            { data: 'NbHeures' },
-            { data: 'DescMat' }
+            { 
+                data: 'Nom',
+                width: "30%",
+             },
+            { 
+                data: 'NbHeures' ,
+                width: "20%",
+            },
+            { 
+                data: 'DescMat' ,
+                width: "50%"
+            }
         ]
     });
 
     $('#tableMatiereS2').DataTable({
         "language": {
             "url": "https://cdn.datatables.net/plug-ins/1.10.21/i18n/French.json"
+        },
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bFilter": true,
+        "bInfo": false,
+        "bAutoWidth": false,
+        responsive: true,
+        rowReorder: {
+            selector: 'td:nth-child(2)'
         },
         "ajax" : {
             "url" : "./Requetes.php",
@@ -27,12 +72,30 @@ $(document).ready(function () {
             "dataSrc" :''
         },
         columns: [
-            { data: 'Nom' },
-            { data: 'NbHeures' },
-            { data: 'DescMat' }
+            { 
+                data: 'Nom',
+                width: "30%",
+             },
+            { 
+                data: 'NbHeures' ,
+                width: "20%",
+            },
+            { 
+                data: 'DescMat' ,
+                width: "50%"
+            }
         ]
     });
+
     $('.dataTables_length').addClass('bs-select');
+
+    $('#tableMatiereS2').DataTable()
+    .columns.adjust()
+    .responsive.recalc();
+
+    $('#tableMatiereS1').DataTable()
+    .columns.adjust()
+    .responsive.recalc();
     });
 
 
