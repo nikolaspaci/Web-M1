@@ -16,7 +16,7 @@
 
                 //Création de la base de données MasterAPP
                 try{
-                    $connexion=new PDO("mysql:host=$serveur;port=3307",$login,$pass);
+                    $connexion=new PDO("mysql:host=$serveur",$login,$pass);
                     $connexion->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
                     $sqlCreationDataBase="CREATE DATABASE MasterApp";
                     $connexion->exec($sqlCreationDataBase);
@@ -28,12 +28,12 @@
 
                 //Création de la table Matiere
                 try{
-                    $connexion=new PDO("mysql:host=$serveur;dbname=MasterApp;port=3307",$login,$pass);
+                    $connexion=new PDO("mysql:host=$serveur;dbname=MasterApp",$login,$pass);
                     $connexion->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
                     $sqlCreationTable="CREATE TABLE Matiere(IdMatiere INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
                                         Nom VARCHAR(50),
                                         NomCourt VARCHAR(10),
-                                        NbHeures INT UNSIGNED,
+                                        NbECTS INT UNSIGNED,
                                         Semestre INT UNSIGNED,
                                         DescMat MEDIUMTEXT)";
                     $connexion->exec($sqlCreationTable);
