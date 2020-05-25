@@ -15,7 +15,7 @@
                 $pass="";
                 
                 try{
-                    $connexion=new PDO("mysql:host=$serveur;dbname=MasterApp;port=3307",$login,$pass);
+                    $connexion=new PDO("mysql:host=$serveur;dbname=MasterApp",$login,$pass);
                     $connexion->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
                     $connexion->exec('SET NAMES utf8');
 
@@ -29,7 +29,17 @@
                     ('Systèmes et algorithmiques répartis', 'SAR', 4, 1,'Ce cours vise à présenter les concepts élémentaires des systèmes et les algorithmes associés aux environnements répartis. Les applications réparties s’exécutent sur un ensemble de machines connectées en réseau. Elles représentent un ensemble de composants qui coopèrent pour réaliser un objectif commun en utilisant le réseau comme un moyen d’échanger des données.'),
                     ('Notions générales de Droit', 'Droit', 3, 1,'Permettre aux étudiants de découvrir les fondements du droit français et de se familiariser avec les principaux concepts ainsi qu’avec les grandes classifications du droit positif afin de prendre conscience des spécificités du droit de l’entreprise.'),
                     ('Marketing', 'Marketing', 3, 1,'Familiariser les étudiants avec les concepts de marketing et leur permettre d’avoir une vision critique sur le fonctionnement des marchés, des entreprises et de leurs actions.'),
-                    ('Anglais', 'Anglais', 2, 1,'Fournir aux étudiants les outils linguistiques nécessaires pour fonctionner efficacement dans l’entreprise et avec leurs partenaires européens. Préparation au TOEIC. Familiariser les étudiants avec la terminologie économique à partir de thèmes d’actualité.');";
+                    ('Anglais', 'Anglais', 2, 1,'Fournir aux étudiants les outils linguistiques nécessaires pour fonctionner efficacement dans l’entreprise et avec leurs partenaires européens. Préparation au TOEIC. Familiariser les étudiants avec la terminologie économique à partir de thèmes d’actualité.'),
+                    ('Analyse financière', 'AF', 3, 2,'Introduction de notions de comptabilités générales et de mathématiques financières nécessaires à l’analyse financière et présentation de l’analyse du compte de résultat et du bilan financier.'),
+                    ('Systèmes d’information avancés 2', 'SIA2', 3, 2,'Application sous forme d’un projet qui s’effectue dans les conditions semblables à un projet informatique avec l’utilisation de la méthodologie SCRUM.'),
+                    ('Éthique en informatique et protection des données', 'EIPD', 1, 2,'Objectif de ce cours est de sensibiliser les étudiants au regard de techniques de manipulation et d’introduire à la problématique de la protection et traitement des données et à ses conséquences sur les individus.'),
+                    ('Jeu d’entreprise', 'JE', 1, 2,'Application des concepts de l’analyse financière sur un logiciel de simulation.'),
+                    ('Organisation et communication', 'ORGACOM', 3, 2,'Ce cours comporte : 1) Une partie sociologie qui développe différents aspects du processus de changement dans l’organisation et du processus 2) Une partie communication qui présente et analyse différents types d’interactions liés au processus de changement (conduite de réunion, négociation, gestion de conflit, etc...)'),
+                    ('Programmation Web', 'PWeb', 3, 2,'Le sujet principal de ce cours est la construction d’applications web modernes. Programmation côté client en HTML CSS JS. Programmation côté serveur en PHP.'),
+                    ('Marchés Financiers', 'Marchés Fi', 3, 2,'Connaissance générale des marchés de capitaux (fonctionnement et raison d’être). Mathématiques des calculs financiers. Initiation à la modélisation stochastique des marchés et principaux résultats de la théorie classique. Financement, risques et marchés de capitaux (actions, obligations, option, marché monétaire, ...)'),
+                    ('Décision collective, décision multicritère', 'DCDM', 3, 2,'Présenter les principales familles de méthodes d’agrégation multicritère existantes et mise en œuvre de telles méthodes dans des situations réelles de décision.'),
+                    ('Ordonnancement et Gestion de production', 'OGP', 3, 2,'Cet enseignement a pour objet de sensibiliser les étudiants aux problématiques de gestion de la production de biens et de services, en mettant en évidence la très grande complexité des problèmes à résoudre et la difficulté qui en découle de piloter efficacement une chaîne logistique.'),
+                    ('Sécurité et réseaux', 'Réseaux', 3, 2,'Le cours porte sur les protocoles réseaux utilisés dans les couches hautes du modèle OSI, ainsi que sur les algorithmes de cryptographie qui permettent de les sécuriser.');";
                     $connexion->exec($sqlInsert);
                     echo '<p>Les nouvelles lignes ont été ajouté avec succès</p>';
                 }
