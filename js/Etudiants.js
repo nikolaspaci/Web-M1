@@ -4,7 +4,7 @@ $(document).ready(function () {
             "url": "https://cdn.datatables.net/plug-ins/1.10.21/i18n/French.json"
         },
         "bPaginate": true,
-        "bLengthChange": false,
+        "bLengthChange": true,
         "bFilter": true,
         "bInfo": false,
         "bAutoWidth": false,
@@ -30,7 +30,11 @@ $(document).ready(function () {
             }
             },
             { data: 'Prenom' },
-            { data: 'AdresseEmail' },
+            { data: 'AdresseEmail',
+            render: function ( data, type, row, meta ) {
+                return '<a href="mailto:'+row['LinkPagePerso']+'" target="_blank">'+data+'</a>';
+            }
+            },
             { data: 'StatusEtudiant' },
             { data: 'NomSpecialite' }
         ]

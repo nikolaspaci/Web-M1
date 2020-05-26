@@ -15,7 +15,7 @@
                 $pass="";
                 
                 try{
-                    $connexion=new PDO("mysql:host=$serveur;dbname=MasterApp",$login,$pass);
+                    $connexion=new PDO("mysql:host=$serveur;dbname=MasterApp;port=3307",$login,$pass);
                     $connexion->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
                     $connexion->exec('SET NAMES utf8');
 
@@ -41,6 +41,38 @@
                     ('Ordonnancement et Gestion de production', 'OGP', 3, 2,'Cet enseignement a pour objet de sensibiliser les étudiants aux problématiques de gestion de la production de biens et de services, en mettant en évidence la très grande complexité des problèmes à résoudre et la difficulté qui en découle de piloter efficacement une chaîne logistique.'),
                     ('Sécurité et réseaux', 'Réseaux', 3, 2,'Le cours porte sur les protocoles réseaux utilisés dans les couches hautes du modèle OSI, ainsi que sur les algorithmes de cryptographie qui permettent de les sécuriser.');";
                     $connexion->exec($sqlInsert);
+                    $sqlinsertStage="INSERT INTO stage (IdStage, NomSpecialite) VALUES
+                    (1, 'Développeur Java'),
+                    (2, 'Consultant SI'),
+                    (3, 'Développeur C++'),
+                    (4, 'Assistant Chef de Projet'),
+                    (5, 'Développeur Python'),
+                    (6, 'Consultant BA'),
+                    (7, 'Développeur Full Stack'),
+                    (8, 'Data Analyst');";
+                    $connexion->exec($sqlinsertStage);
+                    $sqlinsertEtudiant="INSERT INTO etudiant (IdEtudiant, Nom, Prenom, AdresseEmail, DateNaissance, Parcours, NoteMath, NoteInformatique, Moyenne, StatusEtudiant, IdStage, LinkPagePerso) VALUES
+                    (1, 'Spaci', 'Nikola', 'nikolaspaci@gmail.com', '1998-11-03', 'BTS', 15, 15, 15, 'Inscrit', 1, './portfolioNikola/index.html'),
+                    (2, 'Moore', 'Tom', 'tommoore@gmail.com', '1998-01-01', 'BTS', 15, 15, 15, 'Inscrit', 2, ''),
+                    (3, 'Koudossou', 'Alison', 'alisonSudoku@gmail.com', '1998-09-16', 'BTS', 16, 17, 18, 'Inscrit', 3, ''),
+                    (4, 'Vitas', 'Felix', 'FelixVitas@gmail.com', '1998-11-03', 'DUT', 15, 15, 15, 'Inscrit', 6, ''),
+                    (5, 'Charlon', 'Cyril', 'CyrilCharlon@gmail.com', '1998-01-07', 'DUT', 15, 15, 15, 'Inscrit', 5, ''),
+                    (6, 'Tang', 'Eric', 'EricTang@gmail.com', '1998-09-19', 'Licence', 16, 17, 18, 'Inscrit', 5, ''),
+                    (7, 'Desgrange', 'Henry-Julien', 'HJDDesgrange@gmail.com', '1998-11-09', 'Licence', 18, 19, 17, 'Inscrit', 3, ''),
+                    (8, 'Ledoux', 'Louis', 'LouisLedoux@gmail.com', '1998-03-03', 'DUT', 15, 15, 15, 'Inscrit', 5, ''),
+                    (9, 'Bendib', 'Yakine', 'YakineBendib@gmail.com', '1998-06-16', 'DUT', 16, 17, 18, 'Inscrit', 4, ''),
+                    (10, 'Karim', 'Douha', 'DouhaKarim@gmail.com', '1998-02-03', 'Licence', 15, 15, 15, 'Inscrit', 3, ''),
+                    (11, 'Leguen', 'Yannis', 'YannisLeguen@gmail.com', '1998-08-07', 'DUT', 15, 15, 15, 'Inscrit', 4, ''),
+                    (12, 'Peynet', 'Emilie', 'EmiliePeynet@gmail.com', '1998-11-06', 'Licence', 16, 17, 18, 'Inscrit', 6, ''),
+                    (13, 'Piganeau', 'Thais', 'ThaisPiganeau@gmail.com', '1998-10-03', 'Licence', 14, 16, 15, 'Inscrit', 1, ''),
+                    (14, 'Sakho', 'Aissatou', 'AissatouSakho@gmail.com', '1998-01-04', 'BTS', 15, 15, 15, 'Inscrit', 2, ''),
+                    (15, 'Facquet', 'jeremie', 'JeremieFacquet@gmail.com', '1998-09-16', 'Licence', 16, 17, 18, 'Inscrit', 3, ''),
+                    (16, 'Lachi', 'Yamina', 'YaminaLachi@gmail.com', '1998-10-03', 'BTS', 15, 15, 15, 'Inscrit', 6, ''),
+                    (17, 'Sok', 'Sam David', 'SamDavidSok@gmail.com', '1998-01-05', 'DUT', 15, 15, 15, 'Inscrit', 5, ''),
+                    (18, 'Ahdjoudj', 'Ines', 'InesAhdjoudj@gmail.com', '1998-02-19', 'DUT', 16, 17, 18, 'Inscrit', 5, ''),
+                    (19, 'Bahlel', 'Arslane', 'ArslaneBahlel@gmail.com', '1998-04-09', 'Licence', 18, 19, 17, 'Inscrit', 3, ''),
+                    (20, 'Nadjem', 'Nadir', 'NadirNadjem@gmail.com', '1998-05-03', 'BTS', 15, 15, 15, 'Inscrit', 5, '');";
+                    $connexion->exec($sqlinsertEtudiant);
                     echo '<p>Les nouvelles lignes ont été ajouté avec succès</p>';
                 }
                 catch(PDOException $e){
