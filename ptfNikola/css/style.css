@@ -1,0 +1,293 @@
+#page,#menu,.nav-wrapper,#presentation{
+	background-color: #eee;
+ 
+}
+p{
+   font-family: 'Quicksand', sans-serif;
+   background-color: transparent;
+}
+nav{
+  line-height:0px;
+}
+#presentation{
+  position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.pp img{
+	width: 200px;
+	height: 200px;
+}
+
+.pp{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.nom p{
+    font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  font-size: 2em;
+}
+#description, p{
+	font-family: 'Quicksand', sans-serif;
+  text-align: center;
+}
+
+.scroller i{
+	color: #123D89 ;
+	font-size: 4rem;
+  background-color: transparent;
+
+}
+
+.scroller {
+  opacity: 1;
+  -webkit-transition: all .5s ease-in 3s;
+  transition: all .5s ease-in 3s;
+    background-color: transparent;
+
+}
+
+.scroller {
+  border: 2px solid #EEE ;
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+
+#page{
+  display: none;
+  opacity: 0;
+}
+
+#menu{
+  display: none;
+}
+
+.lgo img{
+   height: 64px;
+}
+#menu nav ul a{
+  color:#123D89;
+}
+
+
+
+#page{
+  padding-top-top: 5%;
+  /*margin-left: 5%;*/
+  display: none;
+  width: 100%;
+ flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#colprofil{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#photoprofil{
+ width: 25%;
+}
+
+.descprofil{
+  width: 45%;
+}
+.descprofil a{
+  color: #123D89;
+}
+
+.divider{
+  margin-top: 5px;
+}
+#photoprofil img{
+ max-width:60%;
+ height: auto;
+
+}
+#linkCV{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 24px;
+display:block;
+text-align:center;
+color:#123D89;
+}
+
+.descprofil h1{
+   font-family: 'Quicksand', sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+.divider{
+  width: 80%;
+}
+
+.qualite{
+  padding-top:5%;
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+}
+.qualite i{
+  color: #123D89;
+  font-size: 5rem;
+}
+
+.s {
+  transition: all 0.1s;
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    justify-content: center;
+    align-items: center;
+}
+ 
+
+
+#Competences{
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#titlecompetence,#titleContact{
+  width: 80%;
+}
+#titlecompetence h1,#titleContact h1{
+
+   font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+  
+}
+ .descompet h3{
+  font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+}
+ .descompet {
+  width: 45%;
+  
+ }
+ .descompet i{
+  font-size: 4rem;
+ }
+
+
+.card-content {
+  text-align: center;
+}
+
+.s:hover{
+
+    transform: scale(1.03);  (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) 
+}
+
+.card-content span{
+    color:#123D89 !important;
+}
+
+#titlerealisation h1{
+     font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+}
+
+#titlerealisation{
+  width: 80%;
+}
+
+#carteprojet{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#carteprojet .card{
+  width: 30%;
+}
+
+#carteprojet .card .card-content {
+    padding: 5px 0 0 0;
+    background-color: white;
+}
+
+#carteprojet .card i{
+  float: right;
+  font-size: 2rem;
+  background-color: white;
+  color: #123D89 ;
+}
+
+#top{
+    position: fixed;
+    right:2%;
+    bottom: 5%;
+    opacity: 0.80;
+    z-index: 100;
+    
+}
+
+#top i{
+      font-size: 3rem;
+    border-radius: 50%;
+    background-color: #90C5D6  ;
+    
+
+}
+
+#top i:hover{
+  background-color: #123D89 ;
+}
+
+.chip {
+    background-color: #90C5D6  ;
+    color: white;
+}
+
+#contact i{
+	font-size: 3rem;
+  background-color: transparent;
+  color:#123D89;
+}
+

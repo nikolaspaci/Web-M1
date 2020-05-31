@@ -12,8 +12,8 @@
    <body>
       <?php include ("modele/navbar.php") ?>
       <div class="content">
-         <div id="Presentation">
-            <h4>Presentation</h4>
+         <div id="Presentation" class="contenair">
+            <h4>Bienvenue à la MIAGE Dauphine !</h4>
             <div class="descPresentation">
                <p>La 1ère année de Master - Méthodes Informatiques Appliquées pour la Gestion des Entreprises (MIAGE) a pour vocation de former des professionnels et des chercheurs maîtrisant parfaitement l'outil informatique et possédants une bonne connaissance de l'organisation et du fonctionnement de l'entreprise. MIAGE garde un ancrage fort dans le réseau national des MIAGE, qui regroupe l'ensemble des formations analogues dans vingt universités française.</p>
                <ul>
@@ -22,12 +22,11 @@
                   <li>Comprendre le fonctionnement des organisations, leurs structures, leurs impératifs stratégiques et l'ensemble des interactions, notamment dans la dimension opérationnelle et humaine</li>
                   <li>Apprendre et maîtriser l'anglais et une LV2 obligatoire, avec une certification en anglais par le TOEIC</li>
                </ul>
-               <p>Ce Master M1 est la première année d’une formation de master Miage en deux ans ; Il s’agit d’une formation de haut niveau fortement axée sur le développement des systèmes d’information (S.I.) et le management des technologies informatiques et de gestion. Cette première année du master prépare aux différentes spécialités du Master 2, à savoir SITN (Systèmes d’Information et Technologies Nouvelles), ID (Informatique Décisionnelle) et IF (Informatique pour la Finance).
-               <p>
+               <p>Ce Master M1 est la première année d’une formation de master Miage en deux ans ; Il s’agit d’une formation de haut niveau fortement axée sur le développement des systèmes d’information (S.I.) et le management des technologies informatiques et de gestion. Cette première année du master prépare aux différentes spécialités du Master 2, à savoir SITN (Systèmes d’Information et Technologies Nouvelles), ID (Informatique Décisionnelle) et IF (Informatique pour la Finance).</p>
             </div>
          </div>
          <hr>
-         <div id="Caracteristiques">
+         <div id="Caracteristiques"  class="contenair">
             <h4>Caracteristiques</h4>
             <h5>Cadre de la Formation</h5>
             <p>La formation est assurée en partenariat avec le CFA AFIA. Le CFA a été créé en 1992 par des grandes entreprises avec l’aval du Conseil Régional d’Ile de France. 
@@ -49,12 +48,14 @@
             </div>
             <div class="col-12 col-md-6">
             <h5>Le lieu d'étude</h5>
+            <div id="mapgoogle">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7921.032955916046!2d2.272029016832776!3d48.871351736488464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e665599cdd14c7%3A0xe1a5048f0be71954!2sUniversit%C3%A9%20Paris-Dauphine%2C%20Place%20du%20Mar%C3%A9chal%20de%20Lattre%20de%20Tassigny%2C%2075016%20Paris!5e0!3m2!1sfr!2sfr!4v1589872079365!5m2!1sfr!2sfr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
             </div>
             </div>
          </div>
          <hr>
-         <div id="Embauches">
+         <div id="Embauches"  class="contenair">
             <h4>Embauches</h4>
             <div class="contenaireCard">
                <div class="card text-center">
@@ -93,7 +94,7 @@
             </div>
          </div>
          <hr>
-         <div id="Avantages">
+         <div id="Avantages"  class="contenair">
             <h4>Avantages</h4>
             <p>L’alternance est une voie privilégiée pour construire un avenir solide. La preuve : près de 100% des apprentis ont un emploi trois mois après leur diplôme.
                Un salaire motivant et des frais d’études payés

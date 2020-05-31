@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Lato|Quicksand|Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
+	<link rel="icon" type="image/png" href="img/NI.png" />
+	<link rel="stylesheet" type="text/css" href="css/materialize.css"  media="screen,projection">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" media="(max-width: 800px)" type="text/css" href="css/Resp.css">
+	<link rel="stylesheet" media="(max-width: 500px)" type="text/css" href="css/respmobile.css">
+
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<script src="https://kit.fontawesome.com/4e52edca80.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script src="js/scripts.js"></script>
+	
+
+	<div id="presentation">
+		<div class="pp"><img  class="responsive-img" src="img/NI.png"></div>
+		<div class="nom"><p>NIKOLA SPACI</p></div>
+		<div id="description">
+			<P>Bienvenue sur mon Eportfolio je suis un étudiant en Master Miage à Dauphine</p>
+			</div>
+			<div class="scroller"><a href="#" onclick="cache()"><i class="material-icons" >keyboard_arrow_down</i></a>
+			</div>
+
+		</div>
+
+		<div id=menu>
+			<header>
+				<div class="navbar-fixed">
+					<nav>
+						<div class="nav-wrapper">
+							<a href="#" class="brand-logo center lgo"><img src="img/NI.png"></a> 
+						 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+							<ul class="section table-of-contents left hide-on-med-and-down">
+								<li ><a class="ancre" href="#colprofil">Présentation</a></li>
+								<li><a class="ancre" href="#titlecompetence">Compétences</a></li> 
+								<li><a class="ancre" href="#carteprojet">Réalisations</a></li>
+								<li><a class="ancre" href="#contact">Contact</a></li>
+							</ul>
+							   <ul class="side-nav" id="mobile-demo">
+      							<li ><a class="ancre" href="#colprofil" >Présentation</a></li>
+								<li><a class="ancre" href="#titlecompetence" >Compétences</a></li> 
+								<li><a class="ancre" href="#carteprojet" >Réalisations</a></li>
+								<li><a class="ancre" href="#contact">Contact</a></li>
+      </ul>
+						</div>
+					</nav>
+				</div>
+			</header>
+			<div id="top"><a href="#colprofil"><i class="material-icons">arrow_upward</i></a></div>
+		</div>
+		<div id="page">
+				
+				<div id="colprofil" class="section scrollspy">
+					<div id="photoprofil"><img  src="img/moi.jpg"></div>
+					<div class=" descprofil" ><h1>Qui suis je ?</h1><p>Actuellement étudiant en Master 1 miage apprentissage à Dauphine, j'occupe un poste de développeur Java à la <a  href="https://particuliers.societegenerale.fr/" target="_blank">Société Générale</a>.
+						Ayant réalisé un grand nombre de projets scolaire et personnels dans divers domaines de l'informatique je maîtrise de nombreux outils et langages informatiques.
+					</p>
+					<a id="linkCV" href="./file/CV-Nikola.pdf" download="CV-Nikola.pdf">CV <i class="fas fa-download"></i></a>
+				</div>
+			</div>
+		
+		<div class="divider"></div>
+		<div class="qualite">
+			<div class="s"><i class="material-icons">group</i>
+				<p>Travail en Equipe</p>
+				<p>Les différents projets réalisés durant ma scolarité m'ont permis de développer un sens du travail en équipe, important si l'on souhaite proposer la meilleure solution. </p>
+			</div>
+			<div class="s"><i class="material-icons">flash_on
+			</i><p>Rigoureux</p>
+			<p>Afin de posposer un projet de qualité je suis rigoureux dans toutes les tâches que j'effectue ainsi on évite bon nombres de problèmes.</p>
+		</div>
+		<div class="s"><i class="material-icons">laptop_mac
+		</i><p>Autonome</p>
+		<p>Pour réaliser mes différents projets j'ai du apprendre à travailler de facon autonome tout en étant capable de m'autoformer.</p>
+	</div>
+</div>
+
+		<div class="divider"></div>
+<div id="titlecompetence" class="section scrollspy"><h1>Compétences</h1></div>
+<div id="Competences">
+	<div class="descompet">
+		<div class="skill card hoverable"">
+			<div class="card-content blue-text">
+				<span class="card-title">Software</span>
+				<i class="devicon-photoshop-plain colored devicon"></i>
+				<i class="devicon-github-plain colored devicon"></i>
+				<i class="devicon-git-plain colored devicon"></i>
+
+
+			</div>
+
+		</div>
+	</div> <!-- fin descompet-->
+
+	<div class="descompet">
+		<div class="skill card hoverable">
+			<div class="card-content blue-text">
+				<span class="card-title">Développement WEB</span>
+				<i class="devicon-html5-plain colored devicon"></i>
+				<i class="devicon-css3-plain colored devicon"></i>
+				<i class="devicon-javascript-plain colored devicon"></i>
+
+			</div>
+
+		</div>
+	</div> <!-- fin descompet-->
+
+	<div class="descompet">
+		<div class="skill card hoverable">
+			<div class="card-content">
+				<span class="card-title">Développement Logiciel</span>
+				<i class="devicon-android-plain colored devicon"></i>
+
+				<i class="devicon-java-plain colored devicon"></i>
+				<i class="devicon-c-plain colored devicon"></i>
+				<i class="devicon-cplusplus-plain colored devicon"></i>
+				<i class="devicon-csharp-plain colored devicon"></i>
+
+
+			</div>
+
+		</div>
+	</div> <!-- fin descompet-->
+
+	<div class="descompet">
+		<div class="skill card hoverable">
+			<div class="card-content blue-text">
+				<span class="card-title">Base de données</span>
+				<i class="devicon-mysql-plain colored devicon"></i>
+				<i class="devicon-oracle-original colored devicon"></i>
+
+			</div>
+
+		</div>
+	</div> <!-- fin descompet-->
+
+	<div class="descompet">
+		<div class="skill card hoverable">
+			<div class="card-content blue-text">
+				<span class="card-title">Système d'exploitation</span>
+				<i class="devicon-windows8-original colored devicon"></i>
+				<i class="devicon-linux-plain colored devicon"></i>
+
+
+			</div>
+
+		</div>
+	</div> <!-- fin descompet-->
+
+	<div class="descompet">
+		<div class="skill card hoverable">
+			<div class="card-content blue-text">
+				<span class="card-title">CMS</span>
+				<i class="devicon-wordpress-plain colored devicon"></i>
+
+
+
+
+			</div>
+
+		</div>
+	</div> <!-- fin descompet-->
+
+</div>
+
+<div class="divider"></div>
+<div id="titlerealisation"  ><h1>Réalisations</h1></div>
+
+<div id="carteprojet" class="section scrollspy">
+
+   <div class=" skill card hoverable sticky-action">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="img/waza.png">
+    </div>
+    <div class="card-content activator">
+		 <div class="chip">Java</div> 
+ 		 <div class="chip">xml</div>    
+ 		<div class="chip">Android</div>       
+	</div>
+    <div class="card-action">
+        <a href="https://play.google.com/store/apps/details?id=scaryelephant.waza&hl=fr">
+         <i class="material-icons">open_in_new</i></a>
+
+    </div>
+    <div class="card-reveal">
+      <span class="card-title white  ">Waza SoundBox<i class="material-icons right">close</i></span>
+      <p>Une application de loisir, où l'on retrouve des bruitages</p>
+    </div>
+  </div> <!--fin card -->
+
+   
+   <div class="skill card hoverable sticky-action">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="img/iconedodo.jpg">
+    </div>
+    <div class="card-content activator">
+		 <div class="chip">Java</div> 
+ 		 <div class="chip">xml</div>    
+ 		<div class="chip">Android</div>       
+	</div>
+    <div class="card-action">
+        <a href="https://play.google.com/store/apps/details?id=scaryelephant.waza&hl=fr">
+         <i class="material-icons">open_in_new</i></a>
+        
+    </div>
+    <div class="card-reveal">
+      <span class="card-title white">DODO APP<i class="material-icons right">close</i></span>
+      <p>Application permettant de consulter son emploi du temps</p>
+    </div>
+  </div> <!--fin card -->
+
+   
+   <div class="skill card hoverable sticky-action">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="img/Dauphine.png">
+    </div>
+    <div class="card-content activator">
+		 <div class="chip">HTML</div> 
+ 		 <div class="chip">JS</div>    
+ 		<div class="chip">CSS</div>       
+	</div>
+    <div class="card-action">
+        <a href="https://play.google.com/store/apps/details?id=scaryelephant.waza&hl=fr">
+         <i class="material-icons">open_in_new</i></a>
+        
+    </div>
+    <div class="card-reveal">
+      <span class="card-title white">Mon master<i class="material-icons right">close</i></span>
+      <p>Site scolaire permettant d'avoir des informations sur la M1 miage</p>
+    </div>
+  </div> <!--fin card -->
+
+</div><!-- fin carteprojet-->
+<div id="titleContact"><h1>Contact</h1></div>
+<div id="contact" class="section scrollspy">
+	<a href="https://github.com/nikolaspaci" target="_blank"><i class="devicon-github-plain colored devicon"></i></a>
+	<a href="https://www.linkedin.com/in/nikola-spaci/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+	<a href="mailto:nikolaspaci@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+	<a href="https://www.instagram.com/niko_spc" target="_blank"><i class="fab fa-instagram"></i></a>
+
+</div>
+
+</div>
+</div>
+</div>
+
+
+
+
+
+<script >
+	$(document).ready(function(){
+
+       $(".button-collapse").sideNav();
+
+		 $('.scrollspy').scrollSpy();
+		console.log( "ready!" );
+							var mousewheelevt = (/Firefox/i.test(navigator.userAgent)) ? "DOMMouseScroll" : "mousewheel" //FF doesn't recognize mousewheel as of FF3.x
+							$('#presentation').bind(mousewheelevt, function(e){
+								console.log( "execution" );
+							var evt = window.event || e //equalize event object     
+							evt = evt.originalEvent ? evt.originalEvent : evt; //convert to originalEvent if possible               
+							var delta = evt.detail ? evt.detail*(-40) : evt.wheelDelta //check for detail first, because it is used by Opera and FF
+							
+							if(delta > 0) {
+								cache();
+							}
+							else{
+								cache();  
+
+								console.error("te");
+							}   
+						});
+							$(document).ready(function() {
+		$('.ancre').on('click', function() { // Au clic sur un élément
+			var page = $(this).attr('href'); // Page cible
+			var speed = 750; // Durée de l'animation (en ms)
+			$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+			return false;
+		});
+	});
+						});
+					</script>
+					<script type="text/javascript">
+						function cache(){
+							// on récupère l'élément
+							var elmt = document.getElementById("presentation");
+							elmt.style.opacity="0";
+							elmt.style.display = "none";
+							//$("#presentation").fadeOut();
+							var menu=document.getElementById("menu");
+							menu.style.display="block";
+							var reste=document.getElementById("page");
+							reste.style.opacity="1";
+							$("#page").fadeIn("speed");
+							
+							reste.style.display="flex";
+
+						}
+					</script>
+					<script src="js/scrollreveal.js"></script>
+					<script >window.sr = ScrollReveal();
+				sr.reveal('.descompet')
+			sr.reveal('.card');</script>
+			
+			<script >function cachemenu(){
+				var temp = document.getElementsByClassName("side-nav")[0];;
+				temp.style.transform="translateX(-100%)";
+
+			}
+
+			</script>
+			</body>
+			</html>							
