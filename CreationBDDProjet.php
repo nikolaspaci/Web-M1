@@ -16,7 +16,7 @@
 
                 //Création de la base de données MasterAPP
                 try{
-                    $connexion=new PDO("mysql:host=$serveur;port=3307",$login,$pass);
+                    $connexion=new PDO("mysql:host=$serveur",$login,$pass);
                     $connexion->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
                     $sqlCreationDataBase="CREATE DATABASE MasterApp";
                     $connexion->exec($sqlCreationDataBase);
@@ -28,14 +28,14 @@
 
                 //Création de la table Matiere
                 try{
-                    $connexion=new PDO("mysql:host=$serveur;dbname=MasterApp;port=3307",$login,$pass);
+                    $connexion=new PDO("mysql:host=$serveur;dbname=MasterApp",$login,$pass);
                     $connexion->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
                     $sqlCreationTable="CREATE TABLE Matiere(IdMatiere INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-                                        Nom VARCHAR(50),
-                                        NomCourt VARCHAR(10),
-                                        NbECTS INT UNSIGNED,
-                                        Semestre INT UNSIGNED,
-                                        DescMat MEDIUMTEXT)";
+                                        Nom VARCHAR(50) NOT NULL,
+                                        NomCourt VARCHAR(10) NOT NULL,
+                                        NbECTS INT UNSIGNED NOT NULL,
+                                        Semestre INT UNSIGNED NOT NULL,
+                                        DescMat MEDIUMTEXT NOT NULL)";
                     $connexion->exec($sqlCreationTable);
                     echo '<p>Creation de la table Matiere effectuee avec succes</p>';
                 }
@@ -58,15 +58,16 @@
                 //Création de la table Etudiant
                 try{
                     $sqlCreationTable="CREATE TABLE Etudiant(IdEtudiant INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-                                        Nom VARCHAR(20),
-                                        Prenom VARCHAR(20),
-                                        AdresseEmail VARCHAR(50),
-                                        DateNaissance DATE,
-                                        Parcours VARCHAR (50),
-                                        NoteMath INT UNSIGNED,
-                                        NoteInformatique INT UNSIGNED,
-                                        Moyenne INT UNSIGNED,
-                                        StatusEtudiant VARCHAR(15),
+                                        Nom VARCHAR(20) NOT NULL,
+                                        Prenom VARCHAR(20) NOT NULL,
+                                        AdresseEmail VARCHAR(50) NOT NULL,
+                                        DateNaissance DATE NOT NULL,
+                                        Parcours VARCHAR (50) NOT NULL,
+                                        NoteMath INT UNSIGNED NOT NULL,
+                                        NoteInformatique INT UNSIGNED NOT NULL,
+                                        NoteAnglais INT UNSIGNED NOT NULL,
+                                        Moyenne INT UNSIGNED NOT NULL,
+                                        StatusEtudiant VARCHAR(15) NOT NULL,
                                         IdStage INT UNSIGNED,
                                         LinkPagePerso  VARCHAR (80),
                                         CONSTRAINT FK_IdStage FOREIGN KEY (IdStage) REFERENCES Stage(IdStage))";

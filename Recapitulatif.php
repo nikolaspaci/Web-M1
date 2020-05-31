@@ -10,7 +10,11 @@
       <script src="js/Recapitulatif.js"></script>
    </head>
    <body>
-        <?php include ("modele/navbar.php") ?>
+        <?php 
+            include ("modele/navbar.php");
+            session_start();
+            $_SESSION["POSTDATA_Candidature"] = $_POST;
+        ?>
         <div class="content">
             <h3>Récapitulatif de la candidature</h3>
             <div class="form-row">
@@ -60,8 +64,10 @@
             </div>
             </div>
             <div class="float-right">
-                <button class="btn btn-secondary pull-right" onclick="history.back();">Retour</button>
-                <button type="submit" class="btn btn-primary pull-right">Sauvegarde</button>
+                <form action="SauvegardeCandidature.php" method="POST">
+                    <button class="btn btn-secondary pull-right" onclick="history.back();">Retour</button>                                  
+                    <button type="submit" class="btn btn-primary pull-right">Sauvegarde</button>
+                <form>
             </div>
         </div>
    </body>
