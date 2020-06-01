@@ -15,7 +15,7 @@
                 $pass="";
                 
                 try{
-                    $connexion=new PDO("mysql:host=$serveur;dbname=MasterApp;port=3307",$login,$pass);
+                    $connexion=new PDO("mysql:host=$serveur;dbname=MasterApp;",$login,$pass);
                     $connexion->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
                     $connexion->exec('SET NAMES utf8');
 
