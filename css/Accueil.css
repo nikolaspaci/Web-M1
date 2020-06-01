@@ -1,7 +1,7 @@
 .contenaireCard{
     display: flex;
-   flex-wrap: wrap;
-   justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .card{
     flex: 0 1 45%;
@@ -19,12 +19,13 @@
     position:relative;
     height:0;
 }
-    
-    #mapgoogle iframe {
+
+#mapgoogle iframe {
     left:0;
     top:0;
     height:100%;
     width:100%;
     position:absolute;
-    }
+}
+
 

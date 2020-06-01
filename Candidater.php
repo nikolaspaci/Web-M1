@@ -12,15 +12,15 @@
    <body>
       <?php include ("modele/navbar.php") ?>
       <div class="content">
-      <h4>Candidater</h4>
-      <p>Vous souhaitez rejoindre la MIAGE de Dauphine ?</p>
-      <p>Postulez dès maintenant !</p>
+         <h4>Candidater</h4>
+         <p>Vous souhaitez rejoindre la MIAGE de Dauphine ?</p>
+         <p>Postulez dès maintenant !</p>
          <form action="Recapitulatif.php" method="post" onsubmit="return controleFormulaire()">
             <div class="form-row">
                <div class="form-group col">
                   <label for="InputNom">Nom</label>
                   <input type="text" class="form-control" name="InputNom" id="InputNom"  placeholder="Saisir votre nom">
-               </div>               
+               </div>
                <div class="form-group col">
                   <label for="InputPrenom">Prenom</label>
                   <input type="text" class="form-control" name="InputPrenom" id="InputPrenom" placeholder="Saisir votre prénom">

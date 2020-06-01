@@ -11,7 +11,6 @@ function connectDB(){
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $port="3307";
     $db="masterapp";
     try {
         $db =  new PDO("mysql:host=$servername;dbname=$db;charset=UTF8", $username, $password);
