@@ -1,0 +1,35 @@
+.main-wrapper {
+    height: 100vh;
+    overflow: auto;
+    background-color: #f5f6fa;
+}
+
+#scolaire{
+    position: absolute;
+}
+
+#professionel{
+    position: absolute;
+}
+
+.slideDivContainer {
+    position: relative;
+}
+
+#pictogrammesContainer {
+    position: relative;
+    width: 70%;
+    margin-top: 10px;
+}
+.clickPictogramme{
+    width: 25%;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.pictogramme{
+    width:100%;
+}
+
+#navbar{
+    margin-bottom: 30px;
+}

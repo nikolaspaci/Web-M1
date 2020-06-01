@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <title>Portfolio - Tom Moore</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.9.1/jquery-ui.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+    </head>
+    <body>
+        <div class="main-wrapper">
+            <nav class="navbar navbar-light bg-dark" id="navbar">
+                <a class="navbar-brand">
+                  <img src="ressources/images/logo_navbar.png" width="30" height="30" class="d-inline-block align-top">
+                  <span class="text-white align-middle">Portefolio - Tom Moore</span>
+                </a>
+            </nav>
+            <div class="contenu">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="row">
+                                <img src="ressources/images/portrait.jpg" class="img-thumbnail img-fluid" alt="Responsive image">
+                            </div>
+                            <div class="row" id="pictogrammesContainer">                            
+                                <a class="clickPictogramme" href="https://www.linkedin.com/in/tom-moore-73b7ba153/" target="_blank"><img class="pictogramme" src="ressources/images/logo_linkedin.png"></a>
+                                <a class="clickPictogramme" href="ressources/files/Tom_Moore_CV.pdf" download="Tom_Moore_CV.pdf" target="_blank"><img class="pictogramme" src="ressources/images/logo_cv.png"></a> 
+                                <a class="clickPictogramme" href="mailto:tom.moore@outlook.fr"><img class="pictogramme" src="ressources/images/logo_mail.png"></a>                            
+                            </div>                
+                        </div>
+                        <div class="col-9">                            
+                            <div class="slideDivContainer">
+                                <div class="btn-group btn-group-toggle" data-toggle="buttons" style="margin-bottom: 6px;">
+                                    <label class="btn btn-secondary active" id="labelScolaire">
+                                        <input type="radio" name="options" autocomplete="off" checked> Parcours scolaire
+                                    </label>
+                                    <label class="btn btn-secondary" id="labelProfessionnel">
+                                        <input type="radio" name="options" autocomplete="off"> Parcours professionnel
+                                    </label>
+                                </div>
+                                <div id="scolaire">
+                                    <div class="list-group">
+                                        <a class="list-group-item list-group-item-action flex-column align-items-start">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <img src="ressources/images/logo_iut_descartes.png" class="mw-100 float-left" alt="Responsive image">
+                                                </div>
+                                                <div class="col-7">
+                                                    <div class="d-flex w-100 justify-content-between">
+                                                        <h5 class="mb-1">DUT Informatique</h5> 
+                                                    </div>
+                                                    <p class="mb-1 text-justify">Formation de niveau BAC+2 dans laquelle j'ai acquis des compétences techniques solide. Ce curcus est très professionalisant ce qui m'a préparé pour le monde de l'entreprise et plus spécifiquement l'alternace.</p>
+                                                </div>
+                                                <div class="col-2">
+                                                    <small>2016 - 2018</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="list-group-item list-group-item-action flex-column align-items-start">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <img src="ressources/images/logo_dauphine.png" class="mw-100 float-left" alt="Responsive image">
+                                                </div>
+                                                <div class="col-7">
+                                                    <div class="d-flex w-100 justify-content-between">
+                                                        <h5 class="mb-1">Licence MIAGE Apprentissage</h5> 
+                                                    </div>
+                                                    <p class="mb-1 text-justify">Cette licence m'a permis de renforcer mes compétences techniques déjà acquises. Elle m'a également permis de travailler les mathématiques afin de posséder les outils nécessaires au traitement de data mais également à la modélisation de risques. J'ai également pu acquérir un savoir-faire général dans le domaine de la gestion et de la communication</p>
+                                                </div>
+                                                <div class="col-2">
+                                                    <small>2018 - 2019</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="list-group-item list-group-item-action flex-column align-items-start">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <img src="ressources/images/logo_dauphine.png" class="mw-100 float-left" alt="Responsive image">
+                                                </div>
+                                                <div class="col-7">
+                                                    <div class="d-flex w-100 justify-content-between">
+                                                        <h5 class="mb-1">Master 1 MIAGE Apprentissage</h5> 
+                                                    </div>
+                                                    <p class="mb-1 text-justify">Ce master est la suite de la licence. Il permet de toujours plus renforcer la double compétence informatique / gestion. Ainsi j'obtiens une réelle compréhension de l'outil informatique et des systèmes d'informations dans son ensemble.</p>
+                                                </div>
+                                                <div class="col-2">
+                                                    <small>2019 - 2020</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div id="professionel">
+                                    <div class="list-group">
+                                        <a class="list-group-item list-group-item-action flex-column align-items-start">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <img src="ressources/images/logo_e3conseil.png" class="mw-100 float-left" alt="Responsive image">
+                                                </div>
+                                                <div class="col-7">
+                                                    <div class="d-flex w-100 justify-content-between">
+                                                        <h5 class="mb-1">Développeur VB.NET</h5> 
+                                                    </div>
+                                                    <p class="mb-1 text-justify">Cette première expérience professionnelle m'a permis de gagner énormément en autonomie. En effet, je fus le seul informaticien dans une structure de trois juristes. Ce stage m'a également permis de renforcer mes compétences de compréhension fonctionnelles puisque j'ai dû comprendre le besoin de mes collaborateurs afin d'y répondre au mieux.</p>
+                                                </div>
+                                                <div class="col-2">
+                                                    <small>avril - juillet 2018</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="list-group-item list-group-item-action flex-column align-items-start">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <img src="ressources/images/logo_ostrum.jpg" class="mw-100 float-left" alt="Responsive image">
+                                                </div>
+                                                <div class="col-7">
+                                                    <div class="d-flex w-100 justify-content-between">
+                                                        <h5 class="mb-1">Développeur de proximité front office</h5> 
+                                                    </div>
+                                                    <p class="mb-1 text-justify">Intégrer au sein du front office d'une société de gestion d'actifs, cette mission d'un an m'a plongé dans le monde de la gestion de portefeuille. Elle fût très exigente d'un point de vue fonctionnelle, puisque je n'avais aucune connsaissance dans ce domaine. Cette mission m'a donné envie de m'orienter en M2 MIAGE Informatique pour la Finance.</p>
+                                                </div>
+                                                <div class="col-2">
+                                                    <small>2018 - 2019</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="list-group-item list-group-item-action flex-column align-items-start">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <img src="ressources/images/logo_bred.png" class="mw-100 float-left" alt="Responsive image">
+                                                </div>
+                                                <div class="col-7">
+                                                    <div class="d-flex w-100 justify-content-between">
+                                                        <h5 class="mb-1">Développeur Java J2EE</h5> 
+                                                    </div>
+                                                    <p class="mb-1 text-justify">Arpès avoir obtenu de solides compétences fonctionelles, j'ai eu envie de chosir une mission au sein d'une DSI car j'apprécie tout d'abord le technique. Ainsi je peux  participe au développement d'un projet J2EE utilisant le framework Spring Boot. Il permet de développer des Web applications suivant une architecture client / serveur. La conduite du projet suit la méthodologie SCRUM.</p>
+                                                </div>
+                                                <div class="col-2">
+                                                    <small>2019 - </small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/animation.js"></script>
+    </body>
+</html>

@@ -54,7 +54,7 @@
                     $connexion->exec($sqlinsertStage);
                     $sqlinsertEtudiant="INSERT INTO etudiant (IdEtudiant, Nom, Prenom, AdresseEmail, DateNaissance, Parcours, NoteMath, NoteInformatique, NoteAnglais, Moyenne, StatusEtudiant, IdStage, LinkPagePerso) VALUES
                     (1, 'Spaci', 'Nikola', 'nikolaspaci@gmail.com', '1998-11-03', 'BTS', 15, 15, 15, 15, 'Inscrit', 1, './ptfNikola/index.html'),
-                    (2, 'Moore', 'Tom', 'tommoore@gmail.com', '1998-01-01', 'BTS', 15, 15, 15, 15, 'Inscrit', 2, ''),
+                    (2, 'Moore', 'Tom', 'tommoore@gmail.com', '1998-01-01', 'BTS', 15, 15, 15, 15, 'Inscrit', 2, './ptfTom/index.html'),
                     (3, 'Koudossou', 'Alison', 'alisonSudoku@gmail.com', '1998-09-16', 'BTS', 16, 17, 15, 18, 'Inscrit', 3, ''),
                     (4, 'Vitas', 'Felix', 'FelixVitas@gmail.com', '1998-11-03', 'DUT', 15, 15, 15, 15, 'Inscrit', 6, ''),
                     (5, 'Charlon', 'Cyril', 'CyrilCharlon@gmail.com', '1998-01-07', 'DUT', 15, 15, 15, 15, 'Inscrit', 5, ''),
