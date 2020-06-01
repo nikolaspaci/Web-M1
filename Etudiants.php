@@ -18,8 +18,8 @@
       <div class="content">
       <h4>Etudiants</h4>
       <p>Vous trouverez l'ensemble des étudiants inscrits ou qui candidatent en Master MIAGE</p>
-      
-      <table id="tableEtudiant" class="table table-bordered table-hover" style="width:100%">
+      <div id="contenairTable">
+      <table id="tableEtudiant" class="table table-bordered table-hover">
             <thead>
                <tr>
                   <th>Nom</th>
@@ -29,7 +29,7 @@
                   <th>Description Stage</th>
                </tr>
             </thead>
-         </table>
-
+      </table>
+      </div>
       </div>
 </html>

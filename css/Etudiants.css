@@ -2,3 +2,7 @@ input{
     border:1px solid #d2d6da;
     border-radius: 3px;
 }
+#contenairTable{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}

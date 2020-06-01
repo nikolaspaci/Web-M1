@@ -27,19 +27,19 @@
                </div>
             </div>
             <div class="form-row">
-               <div class="form-group col-8">
+               <div class="form-group col-12 col-md-8">
                   <label for="InputAdresse">Adresse Mail</label>
                   <input type="mail" class="form-control" name="InputAdresse" id="InputAdresse" placeholder="Saisir votre adresse mail">
                </div>
             </div>
             <div class="form-row">
-               <div class="form-group col-6">
+               <div class="form-group col-8 col-md-6">
                   <label for="DateNaissanceInput">Date de naissance</label>
                   <input class="form-control" type="date" name="DateNaissanceInput" id="DateNaissanceInput">
                </div>
             </div>
             <div class="form-row">
-               <div class="form-group col-6">
+               <div class="form-group col-8 col-md-6">
                   <label for="SelectParcours">Sélectionner votre parcours</label>
                   <select single class="form-control" name="SelectParcours" id="SelectParcours">
                      <option>Licence</option>
