@@ -8,7 +8,6 @@
       <?php include ("modele/basicHeader.php") ?>
       <link rel="stylesheet" href="css/Candidater.css">
       <script src="js/Candidater.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.87/pdf.js"></script>
    </head>
    <body>
       <?php include ("modele/navbar.php") ?>
