@@ -3,8 +3,8 @@ $('#labelScolaire').click(function (evt) {
         return false;
     }
     positionSlide=0
-    $('#scolaire').toggle('slide', {direction: 'left'}, 'slow');
-    $('#professionel').toggle('slide', {direction: 'right'}, 'slow');
+    $('#professionel').hide();
+    $('#scolaire').show();
 });
 
 $('#labelProfessionnel').click(function (evt) {
@@ -12,9 +12,8 @@ $('#labelProfessionnel').click(function (evt) {
         return false;
     }
     positionSlide=1
-    $('#labelProfessionnel').click(false);
-    $('#scolaire').toggle('slide', {direction: 'left'}, 'slow');
-    $('#professionel').toggle('slide', {direction: 'right'}, 'slow');
+    $('#scolaire').hide();
+    $('#professionel').show();
 });
 
 $('#professionel').hide();

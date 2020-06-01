@@ -4,14 +4,6 @@
     background-color: #f5f6fa;
 }
 
-#scolaire{
-    position: absolute;
-}
-
-#professionel{
-    position: absolute;
-}
-
 .slideDivContainer {
     position: relative;
 }
@@ -32,4 +24,13 @@
 
 #navbar{
     margin-bottom: 30px;
+}
+
+#competences{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+ul{
+    padding:0;
 }

@@ -2,25 +2,35 @@
 <html lang="fr">
     <head>
         <title>Portfolio - Tom Moore</title>
+        <link rel="icon" type="image/png" href="ressources/images/logo_navbar.png" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="https://code.jquery.com/ui/1.9.1/jquery-ui.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        
     </head>
     <body>
         <div class="main-wrapper">
-            <nav class="navbar navbar-light bg-dark" id="navbar">
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top" id="navbar">
                 <a class="navbar-brand">
                   <img src="ressources/images/logo_navbar.png" width="30" height="30" class="d-inline-block align-top">
                   <span class="text-white align-middle">Portefolio - Tom Moore</span>
                 </a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link text-white" href="#parcours">Parcours</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white" href="#competences">Compétences</a>
+                      </li>
+                    </ul>
+                  </div>
             </nav>
             <div class="contenu">
                 <div class="container">
-                    <div class="row">
+                    <div class="row" id="parcours">
                         <div class="col-3">
                             <div class="row">
                                 <img src="ressources/images/portrait.jpg" class="img-thumbnail img-fluid" alt="Responsive image">
@@ -146,6 +156,68 @@
                                     </div>
                                 </div>
                             </div>                        
+                        </div>
+                    </div>
+                    <div class="row" id="competences">
+                        <h3 class="col-12">Compétences</h3>
+                        <div class="card col">
+                            <img class="card-img-top" src="ressources/images/logo_j2ee.png" alt="Card image cap">
+                            <hr/>
+                            <div class="card-body">
+                              <h5 class="card-title">J2EE</h5>
+                              <p class="card-text">
+                                <ul>
+                                    <li>Architecture cient / serveur</li>                                    
+                                    <li>Modèle MVC</li>
+                                    <li>Architecture Microservices (Spring Boot)</li>
+                                    <li>Interfaces</li>
+                                    <li>Type générique</li>
+                                </ul>
+                              </p>
+                            </div>
+                        </div>
+                        <div class="card col ml-3" style="width: 18rem;">
+                            <img class="card-img-top" src="ressources/images/logo_sql.png" alt="Card image cap">
+                            <hr/>
+                            <div class="card-body">
+                              <h5 class="card-title">SQL</h5>
+                              <p class="card-text">
+                                <ul>
+                                    <li>Création de BDD BCNF / 3NF</li>                                    
+                                    <li>Requêtes</li>
+                                    <li>Programmation de procédure</li>
+                                </ul>
+                              </p>
+                            </div>
+                        </div>
+                        <div class="card col ml-3" style="width: 18rem;">
+                            <img class="card-img-top" src="ressources/images/logo_git.png" alt="Card image cap">
+                            <hr/>
+                            <div class="card-body">
+                              <h5 class="card-title">Git</h5>
+                              <p class="card-text">
+                                <ul>
+                                    <li>Travailler sur un projet</li>                                    
+                                    <li>Pull request</li>
+                                    <li>Branche</li>
+                                </ul>
+                              </p>
+                            </div>
+                        </div>
+                        <div class="card col ml-3" style="width: 18rem;">
+                            <img class="card-img-top" src="ressources/images/logo_scrum.png" alt="Card image cap">
+                            <hr/>
+                            <div class="card-body">
+                              <h5 class="card-title">Scrum</h5>
+                              <p class="card-text">
+                                <ul>
+                                    <li>Daily Scrum Meeting</li>                                    
+                                    <li>Sprint planning</li>
+                                    <li>Rétrospective</li>
+                                    <li>Jira</li>
+                                </ul>
+                              </p>
+                            </div>
                         </div>
                     </div>
                 </div>
