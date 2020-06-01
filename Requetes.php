@@ -14,7 +14,7 @@ function connectDB(){
     $port="3307";
     $db="masterapp";
     try {
-        $db =  new PDO("mysql:host=$servername;port=$port;dbname=$db;charset=UTF8", $username, $password);
+        $db =  new PDO("mysql:host=$servername;dbname=$db;charset=UTF8", $username, $password);
         $db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
         
     } catch(PDOException $e) {
