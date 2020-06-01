@@ -18,50 +18,50 @@
         <div class="content">
             <h4>Récapitulatif de la candidature</h4>
             <div class="form-row">
-            <div class="form-group col">
-                <p>Nom</p>
-                <p class="font-weight-bold"><?php echo $_POST['InputNom'] ?></p>
-            </div>               
-            <div class="form-group col">
-                <p>Prénom</p>
-                <p class="font-weight-bold"><?php echo $_POST['InputPrenom'] ?></p>                
-            </div>            
+                <div class="form-group col">
+                    <p>Nom</p>
+                    <p class="font-weight-bold"><?php echo $_POST['InputNom'] ?></p>
+                </div>               
+                <div class="form-group col">
+                    <p>Prénom</p>
+                    <p class="font-weight-bold"><?php echo $_POST['InputPrenom'] ?></p>                
+                </div>            
             </div>
             <div class="form-row">
-            <div class="form-group col-8">
-                <p>Adresse</p>
-                <p class="font-weight-bold"><?php echo $_POST['InputAdresse'] ?></p>
-            </div>
-            </div>
-            <div class="form-row">
-            <div class="form-group col-8">
-                <p>Date de naissance</p>
-                <p class="font-weight-bold"><?php echo date("d/m/Y",strtotime($_POST['DateNaissanceInput'])) ?></p>
-            </div>
+                <div class="form-group col-8">
+                    <p>Adresse</p>
+                    <p class="font-weight-bold"><?php echo $_POST['InputAdresse'] ?></p>
+                </div>
             </div>
             <div class="form-row">
-            <div class="form-group col-8">
-                <p>Parcours</p>
-                <p class="font-weight-bold"><?php echo $_POST['SelectParcours'] ?></p>
-            </div>
+                <div class="form-group col-8">
+                    <p>Date de naissance</p>
+                    <p class="font-weight-bold"><?php echo date("d/m/Y",strtotime($_POST['DateNaissanceInput'])) ?></p>
+                </div>
             </div>
             <div class="form-row">
-            <div class="form-group col-6 col-md-3">
-                <p>Note en Mathématiques</p>
-                <p class="font-weight-bold"><?php echo $_POST['NoteMathsInput'] ?></p>
+                <div class="form-group col-8">
+                    <p>Parcours</p>
+                    <p class="font-weight-bold"><?php echo $_POST['SelectParcours'] ?></p>
+                </div>
             </div>
-            <div class="form-group col-6 col-md-3">
-                <p>Note en Informatique</p>
-                <p class="font-weight-bold"><?php echo $_POST['NoteInfoInput'] ?></p>
-            </div>
-            <div class="form-group col-6 col-md-3">
-                <p>Note en Anglais</p>
-                <p class="font-weight-bold"><?php echo $_POST['NoteAnglaisInput'] ?></p>
-            </div>
-            <div class="form-group col-6 col-md-3">
-                <p>Moyenne générale</p>
-                <p class="font-weight-bold"><?php echo $_POST['NoteMoyenneInput'] ?></p>
-            </div>
+            <div class="form-row">
+                <div class="form-group col-6 col-md-3">
+                    <p>Note en Mathématiques</p>
+                    <p class="font-weight-bold"><?php echo $_POST['NoteMathsInput'] ?></p>
+                </div>
+                <div class="form-group col-6 col-md-3">
+                    <p>Note en Informatique</p>
+                    <p class="font-weight-bold"><?php echo $_POST['NoteInfoInput'] ?></p>
+                </div>
+                <div class="form-group col-6 col-md-3">
+                    <p>Note en Anglais</p>
+                    <p class="font-weight-bold"><?php echo $_POST['NoteAnglaisInput'] ?></p>
+                </div>
+                <div class="form-group col-6 col-md-3">
+                    <p>Moyenne générale</p>
+                    <p class="font-weight-bold"><?php echo $_POST['NoteMoyenneInput'] ?></p>
+                </div>
             </div>
             <div class="form-row">
                <div class="form-group col">

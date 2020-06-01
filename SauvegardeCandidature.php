@@ -35,80 +35,16 @@
                 echo    "<h4>Candidature en cours de validation</h4>";
                 echo "</div>";
             }else{
-                $etudiant=$stmt->fetch();
-                if($etudiant['StatusEtudiant']=="Inscrit"){
+                $etudiantExistant=$stmt->fetch();
+                if($etudiantExistant['StatusEtudiant']=="Inscrit"){
                     echo "<div class='content'>";
                     echo    "<h4>Erreur : le candidat est déjà inscrit.</h4>";
                     echo "</div>";
                 }else{
-                    //afficher tableau avec la variable $etudiant exemple : $etudiant['Nom']
-
-                    $_SESSION['GestionCandidat']=$candidat;
-                    echo "<div class='content'>";
-                    echo    "<div class='float-right'>";
-                    echo        "<button type='button' class='btn btn-secondary pull-right' data-toggle='modal' data-target='#annulerModal'>Annuler</button>";
-                    echo        "<button type='button' class='btn btn-danger pull-right' data-toggle='modal' data-target='#supprimerModal'>Supprimer</button>";
-                    echo        "<button type='button' class='btn btn-primary pull-right' data-toggle='modal' data-target='#sauvegarderModal'>Sauvegarder</button>";
-                    echo    "</div>";
-                    echo "</div>";
+                    include 'CandidatureExistante.php';
+                    $_SESSION['CandidatureExistante']=$candidat;
                 }
             }
-        ?>
-        <div class="modal fade" id="annulerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header"> 
-                        <h5 class="modal-title">Etes-vous sûr de vouloir annuler ?</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times</span>
-                        </button>
-                    </div>
-                    <div class="modal-footer">
-                        <form action="Accueil.php" metho="POST">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Non</button>
-                            <button type="submit" class="btn btn-primary">Oui</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="supprimerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header"> 
-                        <h5 class="modal-title">Etes-vous sûr de vouloir supprimer ?</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times</span>
-                        </button>
-                    </div>
-                    <div class="modal-footer">
-                        <form action="SuppressionCandidature.php" metho="POST">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Non</button>
-                            <button type="submit" class="btn btn-primary">Oui</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="sauvegarderModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header"> 
-                        <h5 class="modal-title">Etes-vous sûr de vouloir sauvegarder ?</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times</span>
-                        </button>
-                    </div>
-                    <div class="modal-footer">
-                        <form action="ChangementCandidature.php" metho="POST">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Non</button>
-                            <button type="submit" class="btn btn-primary">Oui</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+        ?>        
    </body>
 </html>

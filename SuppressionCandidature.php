@@ -1,8 +1,8 @@
 <?php
     session_start();
-    $candidat=array();
-    $candidat = $_SESSION['GestionCandidat'];
-    unset ( $_SESSION['GestionCandidat'] );
+    $etudiantExistant=array();
+    $etudiantExistant = $_SESSION['CandidatureExistante'];
+    unset ( $_SESSION['CandidatureExistante'] );
 
     $serveur="localhost";
     $login="root";
@@ -12,9 +12,9 @@
     $connexion->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
     $sqlDelete="DELETE 
                 FROM etudiant
-                WHERE Prenom='" .$candidat['Prenom'] ."'
-                AND Nom='" .$candidat['Nom'] ."'
-                AND DateNaissance ='" .$candidat['DateNaissance'] ."'";
+                WHERE Prenom='" .$etudiantExistant['Prenom'] ."'
+                AND Nom='" .$etudiantExistant['Nom'] ."'
+                AND DateNaissance ='" .$etudiantExistant['DateNaissance'] ."'";
     $connexion->exec($sqlDelete);
 
     header("location: http://projetwebmaster/Accueil.php");
