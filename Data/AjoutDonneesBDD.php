@@ -49,7 +49,8 @@
                     (5, 'Développeur Python'),
                     (6, 'Consultant BA'),
                     (7, 'Développeur Full Stack'),
-                    (8, 'Data Analyst');";
+                    (8, 'Data Analyst'),
+                    (9, 'Non renseignée') ;";
                     $connexion->exec($sqlinsertStage);
                     $sqlinsertEtudiant="INSERT INTO etudiant (IdEtudiant, Nom, Prenom, AdresseEmail, DateNaissance, Parcours, NoteMath, NoteInformatique, NoteAnglais, Moyenne, StatusEtudiant, IdStage, LinkPagePerso) VALUES
                     (1, 'Spaci', 'Nikola', 'nikolaspaci@gmail.com', '1998-11-03', 'BTS', 15, 15, 15, 15, 'Inscrit', 1, './ptfNikola/index.html'),

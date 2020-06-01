@@ -40,4 +40,8 @@ $(document).ready(function () {
         ]
     });
     $('.dataTables_length').addClass('bs-select');
+    
+    setInterval( function () {
+        $('#tableEtudiant').DataTable().ajax.reload(null,false);
+    }, 15000 );
 });

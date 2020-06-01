@@ -68,9 +68,9 @@
                                         NoteAnglais INT UNSIGNED NOT NULL,
                                         Moyenne INT UNSIGNED NOT NULL,
                                         StatusEtudiant VARCHAR(15) NOT NULL,
-                                        IdStage INT UNSIGNED,
+                                        IdStage INT UNSIGNED NOT NULL DEFAULT 9,
                                         LinkPagePerso  VARCHAR (80),
-                                        LettreMotivation VARCHAR (1500),
+                                        LettreMotivation varchar(1500),
                                         CONSTRAINT FK_IdStage FOREIGN KEY (IdStage) REFERENCES Stage(IdStage))";
                     $connexion->exec($sqlCreationTable);
                     echo '<p>Creation de la table Etudiant effectuee avec succes</p>';

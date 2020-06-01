@@ -8,7 +8,7 @@
     $login="root";
     $pass="";
 
-    $connexion=new PDO("mysql:host=$serveur;dbname=MasterApp;",$login,$pass);
+    $connexion=new PDO("mysql:host=$serveur;dbname=MasterApp;port=3307",$login,$pass);
     $connexion->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
     $sqlUpdate="UPDATE etudiant
                 SET Nom='" .$etudiantExistant['InputNom'] ."',Prenom='" .$etudiantExistant['InputPrenom'] ."',AdresseEmail='" .$etudiantExistant['InputAdresse'] ."',DateNaissance='" .$etudiantExistant['DateNaissanceInput'] ."',Parcours='" .$etudiantExistant['SelectParcours'] ."',NoteMath=" .$etudiantExistant['NoteMathsInput'] .",NoteInformatique=" .$etudiantExistant['NoteInfoInput'] .",NoteAnglais=" .$etudiantExistant['NoteAnglaisInput'] .",Moyenne=" .$etudiantExistant['NoteMoyenneInput']
@@ -18,6 +18,6 @@
                 
     $connexion->exec($sqlUpdate);
 
-    header("location: http://projetwebmaster/Accueil.php");
+    header("location: Accueil.php");
     exit;
 ?>

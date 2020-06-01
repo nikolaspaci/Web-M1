@@ -8,7 +8,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <h3>Candidature actuelle</h3>
+                        <h4>Candidature actuelle</h4>
                         <div class="form-row">
                             <div class="form-group col">
                                 <p>Nom</p>
@@ -57,9 +57,15 @@
                                 <p class="font-weight-bold"><?php echo $etudiantExistant['Moyenne'] ?></p>
                             </div>
                         </div>
+                        <div class="form-row">
+                            <div class="form-group col">
+                                <label for="LMText">Lettre de motivation</label>
+                                <textarea class="form-control" id="LMText" rows="3" disabled><?php echo $etudiantExistant['LettreMotivation'] ?></textarea>
+                            </div>
+                        </div>
                     </div>
                     <div class="col">
-                        <h3>Nouvelle candidature</h3>
+                        <h4>Nouvelle candidature</h4>
                         <div class="form-row">
                             <div class="form-group col">
                                 <p>Nom</p>
@@ -106,6 +112,12 @@
                             <div class="form-group col">
                                 <p>Moyenne générale</p>
                                 <p class="font-weight-bold"><?php echo $candidat['NoteMoyenneInput'] ?></p>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col">
+                                <label for="LMText">Lettre de motivation</label>
+                                <textarea class="form-control" id="LMText" rows="3" disabled><?php echo $candidat['LMText'] ?></textarea>
                             </div>
                         </div>
                     </div>

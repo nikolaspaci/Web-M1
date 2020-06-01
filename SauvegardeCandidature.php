@@ -28,8 +28,8 @@
                         
             $stmt = $connexion->query($sqlSelect);
             if($stmt->rowCount()==0){
-                $sqlInsertCandidat="INSERT INTO etudiant(Nom,Prenom,AdresseEmail,DateNaissance,Parcours,NoteMath,NoteInformatique,NoteAnglais,Moyenne,StatusEtudiant)
-                            VALUES('" .$candidat['InputNom'] ."','" .$candidat['InputPrenom'] ."','" .$candidat['InputAdresse'] ."','" .$candidat['DateNaissanceInput'] ."','" .$candidat['SelectParcours'] ."'," .$candidat['NoteMathsInput'] ."," .$candidat['NoteInfoInput'] ."," .$candidat['NoteAnglaisInput'] ."," .$candidat['NoteMoyenneInput'] .",'Candidat');";
+                $sqlInsertCandidat="INSERT INTO etudiant(Nom,Prenom,AdresseEmail,DateNaissance,Parcours,NoteMath,NoteInformatique,NoteAnglais,Moyenne,StatusEtudiant,LettreMotivation)
+                            VALUES('" .$candidat['InputNom'] ."','" .$candidat['InputPrenom'] ."','" .$candidat['InputAdresse'] ."','" .$candidat['DateNaissanceInput'] ."','" .$candidat['SelectParcours'] ."'," .$candidat['NoteMathsInput'] ."," .$candidat['NoteInfoInput'] ."," .$candidat['NoteAnglaisInput'] ."," .$candidat['NoteMoyenneInput'] .",'Candidat','".$candidat['LMText']."');";
                 $connexion->exec($sqlInsertCandidat);
                 echo "<div class='content'>";
                 echo    "<h4>Candidature en cours de validation</h4>";

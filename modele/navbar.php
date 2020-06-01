@@ -15,7 +15,7 @@
                  <a class="nav-link dropdown-toggle "  data-toggle="dropdown" href="Accueil.php">Accueil</a>
                  <div class="dropdown-menu">
                     <a class="dropdown-item" href="Accueil.php#Presentation">Présentation</a>
-                    <a class="dropdown-item" href="Accueil.php#Cracteristiques">Caractéristiques</a>
+                    <a class="dropdown-item" href="Accueil.php#Caracteristiques">Caractéristiques</a>
                     <a class="dropdown-item" href="Accueil.php#Embauches">Embauches</a>
                     <a class="dropdown-item" href="Accueil.php#Avantages">Avantages</a>
                  </div>

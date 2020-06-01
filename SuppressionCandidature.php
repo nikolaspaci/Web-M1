@@ -16,7 +16,6 @@
                 AND Nom='" .$etudiantExistant['Nom'] ."'
                 AND DateNaissance ='" .$etudiantExistant['DateNaissance'] ."'";
     $connexion->exec($sqlDelete);
-
-    header("location: http://projetwebmaster/Accueil.php");
+    header("location: Accueil.php");
     exit;
 ?>

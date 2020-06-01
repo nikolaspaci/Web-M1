@@ -76,7 +76,7 @@
             <div class="form-row">
                <div class="form-group col">
                   <label for="AttachLM">Importer une lette de motivation</label>
-                  <input type="file" class="form-control-file" id="AttachLM" accept=".txt,.odt">
+                  <input type="file" class="form-control-file" id="AttachLM" >
                </div>
             </div>
             <button type="submit" class="btn btn-primary  float-right">Envoyer votre candidature</button>
