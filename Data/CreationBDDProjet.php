@@ -16,7 +16,7 @@
 
                 //Création de la base de données MasterAPP
                 try{
-                    $connexion=new PDO("mysql:host=$serveur;port=3307",$login,$pass);
+                    $connexion=new PDO("mysql:host=$serveur;",$login,$pass);
                     $connexion->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
                     $sqlCreationDataBase="CREATE DATABASE MasterApp";
                     $connexion->exec($sqlCreationDataBase);
@@ -28,7 +28,7 @@
 
                 //Création de la table Matiere
                 try{
-                    $connexion=new PDO("mysql:host=$serveur;dbname=MasterApp;port=3307",$login,$pass);
+                    $connexion=new PDO("mysql:host=$serveur;dbname=MasterApp;",$login,$pass);
                     $connexion->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
                     $sqlCreationTable="CREATE TABLE Matiere(IdMatiere INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
                                         Nom VARCHAR(50) NOT NULL,
@@ -70,7 +70,7 @@
                                         StatusEtudiant VARCHAR(15) NOT NULL,
                                         IdStage INT UNSIGNED NOT NULL DEFAULT 9,
                                         LinkPagePerso  VARCHAR (80),
-                                        LettreMotivation varchar(1500),
+                                        LettreMotivation MEDIUMTEXT,
                                         CONSTRAINT FK_IdStage FOREIGN KEY (IdStage) REFERENCES Stage(IdStage))";
                     $connexion->exec($sqlCreationTable);
                     echo '<p>Creation de la table Etudiant effectuee avec succes</p>';

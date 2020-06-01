@@ -18,7 +18,7 @@
             $candidat = $_SESSION['POSTDATA_Candidature'];
             unset ( $_SESSION['POSTDATA_Candidature'] );
 
-            $connexion=new PDO("mysql:host=$serveur;dbname=MasterApp;port=3307",$login,$pass);
+            $connexion=new PDO("mysql:host=$serveur;dbname=MasterApp;",$login,$pass);
             $connexion->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
             $sqlSelect="SELECT * 
                         FROM etudiant e
@@ -42,7 +42,7 @@
                     echo "</div>";
                 }else{
                     include 'CandidatureExistante.php';
-                    $_SESSION['CandidatureExistante']=$candidat;
+                    $_SESSION['NouvelleCandidature']=$candidat;
                 }
             }
         ?>        

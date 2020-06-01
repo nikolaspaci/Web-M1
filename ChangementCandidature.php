@@ -1,20 +1,20 @@
 <?php
     session_start();
-    $etudiantExistant=array();
-    $etudiantExistant = $_SESSION['CandidatureExistante'];
-    unset ( $_SESSION['CandidatureExistante'] );
+    $nouvelleCandidature=array();
+    $nouvelleCandidature = $_SESSION['NouvelleCandidature'];
+    unset ( $_SESSION['NouvelleCandidature'] );
 
     $serveur="localhost";
     $login="root";
     $pass="";
 
-    $connexion=new PDO("mysql:host=$serveur;dbname=MasterApp;port=3307",$login,$pass);
+    $connexion=new PDO("mysql:host=$serveur;dbname=MasterApp;",$login,$pass);
     $connexion->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
     $sqlUpdate="UPDATE etudiant
-                SET Nom='" .$etudiantExistant['InputNom'] ."',Prenom='" .$etudiantExistant['InputPrenom'] ."',AdresseEmail='" .$etudiantExistant['InputAdresse'] ."',DateNaissance='" .$etudiantExistant['DateNaissanceInput'] ."',Parcours='" .$etudiantExistant['SelectParcours'] ."',NoteMath=" .$etudiantExistant['NoteMathsInput'] .",NoteInformatique=" .$etudiantExistant['NoteInfoInput'] .",NoteAnglais=" .$etudiantExistant['NoteAnglaisInput'] .",Moyenne=" .$etudiantExistant['NoteMoyenneInput']
-                ." WHERE Prenom='" .$etudiantExistant['InputPrenom'] ."'
-                AND Nom='" .$etudiantExistant['InputNom'] ."'
-                AND DateNaissance ='" .$etudiantExistant['DateNaissanceInput'] ."'";
+                SET Nom='" .$nouvelleCandidature['InputNom'] ."',Prenom='" .$nouvelleCandidature['InputPrenom'] ."',AdresseEmail='" .$nouvelleCandidature['InputAdresse'] ."',DateNaissance='" .$nouvelleCandidature['DateNaissanceInput'] ."',Parcours='" .$nouvelleCandidature['SelectParcours'] ."',NoteMath=" .$nouvelleCandidature['NoteMathsInput'] .",NoteInformatique=" .$nouvelleCandidature['NoteInfoInput'] .",NoteAnglais=" .$nouvelleCandidature['NoteAnglaisInput'] .",Moyenne=" .$nouvelleCandidature['NoteMoyenneInput'] .",LettreMotivation='" .$nouvelleCandidature['LMText'] ."'"
+                ." WHERE Prenom='" .$nouvelleCandidature['InputPrenom'] ."'
+                AND Nom='" .$nouvelleCandidature['InputNom'] ."'
+                AND DateNaissance ='" .$nouvelleCandidature['DateNaissanceInput'] ."'";
                 
     $connexion->exec($sqlUpdate);
 
