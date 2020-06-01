@@ -8,7 +8,7 @@
     $login="root";
     $pass="";
 
-    $connexion=new PDO("mysql:host=$serveur;dbname=MasterApp;",$login,$pass);
+    $connexion=new PDO("mysql:host=$serveur;dbname=MasterApp;port=3307",$login,$pass);
     $connexion->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
     $sqlDelete="DELETE 
                 FROM etudiant

@@ -8,6 +8,7 @@
       <?php include ("modele/basicHeader.php") ?>
       <link rel="stylesheet" href="css/Candidater.css">
       <script src="js/Candidater.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.87/pdf.js"></script>
    </head>
    <body>
       <?php include ("modele/navbar.php") ?>
@@ -28,8 +29,8 @@
             </div>
             <div class="form-row">
                <div class="form-group col-8">
-                  <label for="InputAdresse">Adresse</label>
-                  <input type="text" class="form-control" name="InputAdresse" id="InputAdresse" placeholder="Saisir votre adresse">
+                  <label for="InputAdresse">Adresse Mail</label>
+                  <input type="mail" class="form-control" name="InputAdresse" id="InputAdresse" placeholder="Saisir votre adresse mail">
                </div>
             </div>
             <div class="form-row">
@@ -69,13 +70,13 @@
             <div class="form-row">
                <div class="form-group col">
                   <label for="LMText">Lettre de motivation</label>
-                  <textarea class="form-control" id="LMText" rows="3"></textarea>
+                  <textarea class="form-control" name="LMText" id="LMText" rows="3"></textarea>
                </div>
             </div>
             <div class="form-row">
                <div class="form-group col">
-                  <label for="AttachLM">Insérer une lette de motivation</label>
-                  <input type="file" class="form-control-file" id="AttachLM">
+                  <label for="AttachLM">Importer une lette de motivation</label>
+                  <input type="file" class="form-control-file" id="AttachLM" accept=".txt,.odt">
                </div>
             </div>
             <button type="submit" class="btn btn-primary  float-right">Envoyer votre candidature</button>

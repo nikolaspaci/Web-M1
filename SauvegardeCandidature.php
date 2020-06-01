@@ -18,7 +18,7 @@
             $candidat = $_SESSION['POSTDATA_Candidature'];
             unset ( $_SESSION['POSTDATA_Candidature'] );
 
-            $connexion=new PDO("mysql:host=$serveur;dbname=MasterApp;",$login,$pass);
+            $connexion=new PDO("mysql:host=$serveur;dbname=MasterApp;port=3307",$login,$pass);
             $connexion->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
             $sqlSelect="SELECT * 
                         FROM etudiant e
@@ -32,19 +32,18 @@
                             VALUES('" .$candidat['InputNom'] ."','" .$candidat['InputPrenom'] ."','" .$candidat['InputAdresse'] ."','" .$candidat['DateNaissanceInput'] ."','" .$candidat['SelectParcours'] ."'," .$candidat['NoteMathsInput'] ."," .$candidat['NoteInfoInput'] ."," .$candidat['NoteAnglaisInput'] ."," .$candidat['NoteMoyenneInput'] .",'Candidat');";
                 $connexion->exec($sqlInsertCandidat);
                 echo "<div class='content'>";
-                echo    "<h3>Candidature en cours de validation</h3>";
+                echo    "<h4>Candidature en cours de validation</h4>";
                 echo "</div>";
             }else{
                 $etudiant=$stmt->fetch();
                 if($etudiant['StatusEtudiant']=="Inscrit"){
                     echo "<div class='content'>";
-                    echo    "<h3>Erreur : le candidat est déjà inscrit.</h3>";
+                    echo    "<h4>Erreur : le candidat est déjà inscrit.</h4>";
                     echo "</div>";
                 }else{
                     //afficher tableau avec la variable $etudiant exemple : $etudiant['Nom']
 
                     $_SESSION['GestionCandidat']=$candidat;
-
                     echo "<div class='content'>";
                     echo    "<div class='float-right'>";
                     echo        "<button type='button' class='btn btn-secondary pull-right' data-toggle='modal' data-target='#annulerModal'>Annuler</button>";

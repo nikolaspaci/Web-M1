@@ -16,7 +16,7 @@
             $_SESSION["POSTDATA_Candidature"] = $_POST;
         ?>
         <div class="content">
-            <h3>Récapitulatif de la candidature</h3>
+            <h4>Récapitulatif de la candidature</h4>
             <div class="form-row">
             <div class="form-group col">
                 <p>Nom</p>
@@ -62,6 +62,12 @@
                 <p>Moyenne générale</p>
                 <p class="font-weight-bold"><?php echo $_POST['NoteMoyenneInput'] ?></p>
             </div>
+            </div>
+            <div class="form-row">
+               <div class="form-group col">
+                  <label for="LMText">Lettre de motivation</label>
+                  <textarea class="form-control" id="LMText" rows="3" disabled><?php echo $_POST['LMText'] ?></textarea>
+               </div>
             </div>
             <div class="float-right">
                 <form action="SauvegardeCandidature.php" method="POST">
