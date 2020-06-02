@@ -70,10 +70,12 @@
                </div>
             </div>
             <div class="float-right">
-                <form action="SauvegardeCandidature.php" method="POST">
-                    <button class="btn btn-secondary pull-right" onclick="history.back();">Retour</button>                                  
-                    <button type="submit" class="btn btn-primary pull-right">Sauvegarde</button>
-                <form>
+                <div class="row">
+                    <button class="btn btn-secondary pull-right" onclick="history.back();">Retour</button>
+                    <form action="SauvegardeCandidature.php" method="POST">                                                      
+                        <button type="submit" class="btn btn-primary pull-right ml-1">Sauvegarde</button>
+                    <form>
+                </div>
             </div>
         </div>
    </body>
