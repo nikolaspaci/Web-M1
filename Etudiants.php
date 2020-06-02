@@ -17,7 +17,7 @@
       <?php include ("modele/navbar.php") ?>
       <div class="content">
       <h4>Etudiants</h4>
-      <p>Vous trouverez l'ensemble des étudiants inscrits ou qui candidatent en Master MIAGE</p>
+      <p>Vous trouverez l'ensemble des étudiants inscrits ou qui candidate en Master MIAGE</p>
       <div id="contenairTable">
       <table id="tableEtudiant" class="table table-bordered table-hover">
             <thead>
